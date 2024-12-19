@@ -1,8 +1,13 @@
 import './App.css';
-import { usePopularMoviesQuery } from './hooks/useMovieQuery';
+import { Routes, Route } from 'react-router-dom';
+import AppLayout from './layout/AppLayout';
+import Home from './page/Home';
+import Movie from './page/Movie';
+import Tv from './page/Tv';
+import NotFound from './page/Notfound';
 function App() {
 
-  const { data, isLoading, error, isError } = usePopularMoviesQuery();
+  /* const { data, isLoading, error, isError } = usePopularMoviesQuery();
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -11,32 +16,21 @@ function App() {
     return <div>Error 발생, 개발자에게 문의 주세요☹
       <p>Contact : hwn123h@naver.com</p>
     </div>
-  }
+  } */
 
   return (
-    <div className="App">
-      <nav>
-        <div className="navbar">
-          <ul>
-            <li>Movies</li>
-            <li>Tvs</li>
-          </ul>
-        </div>
-      </nav>
+    <>
+      <AppLayout />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie" element={<Movie />} />
+        <Route path="/tv" element={<Tv />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
 
 
-      <article>
-        <div className="contents">
-          {data?.results.map((movie) => (
-            <div key={movie.id}>
-              <h2>{movie.title}</h2>
-              <p>{movie.overview}</p>
-            </div>
-          ))}
-        </div>
 
-      </article >
-    </div >
   );
 }
 
