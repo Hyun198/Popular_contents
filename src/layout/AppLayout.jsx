@@ -6,8 +6,7 @@ const AppLayout = () => {
         <div className="AppLayout">
             <nav>
                 <ul>
-                    <li><Link to="/movie">Movie</Link></li>
-                    <li><Link to="/tv">tv</Link></li>
+                    <li><Link to="/media">Movie&Tv</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>

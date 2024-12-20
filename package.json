@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.62.8",
+    "@visx/scale": "^3.12.0",
+    "@visx/text": "^3.12.0",
+    "@visx/wordcloud": "^3.12.0",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "react": "^18.3.1",
