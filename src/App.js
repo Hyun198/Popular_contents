@@ -4,6 +4,7 @@ import AppLayout from './layout/AppLayout';
 import Home from './page/Home';
 import Media from './page/Media';
 import NotFound from './page/Notfound';
+import Youtube from './page/Youtube';
 function App() {
 
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/youtube" element={<Youtube />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
