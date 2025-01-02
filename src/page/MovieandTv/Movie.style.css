@@ -1,0 +1,9 @@
+.MoviePage {
+    text-align: center;
+}
+
+.tagcloud {
+    display: flex;
+    justify-content: center;
+    color: #168DD0;
+}

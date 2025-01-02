@@ -5,8 +5,6 @@
 TMDB API를 통해 영화, TV 합한 현재 트렌딩 컨텐츠를 불러옵니다.  
 트렌딩 컨텐츠 불러오기: [TMDB API](https://api.themoviedb.org/3/trending/all)
 
-![트렌딩 시각화](./public/트렌드시각화.png)
-
 ## 프로젝트 목적
 
 Netflix, Watcha, Disney+ 등 다양한 OTT 서비스에 있는 수많은 컨텐츠들 속에서  
@@ -42,7 +40,3 @@ YouTube, 도서, 뉴스 등 다양한 컨텐츠들의 데이터를 시각화해�
 
 영화 시청이 가능한 플랫폼(예: Netflix, Disney+)과 같은 **데이터 출처**에 대한 정보를 찾아보고,  
 이 정보를 시각화에 포함시켜 사용자에게 더욱 유용한 데이터를 제공할 수 있도록 하겠습니다.
-
-## velog.io
-
-[data visualization](https://velog.io/@hwn123h/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94)
